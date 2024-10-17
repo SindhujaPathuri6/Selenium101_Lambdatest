@@ -33,7 +33,7 @@ public class Scenario1 {
         caps.setCapability("name", m.getName() + this.getClass().getName());
         caps.setCapability("plugin", "git-testng");
 
-        String[] Tags = new String[] { "Feature", "DragAndDrop", "Slider" };
+        String[] Tags = new String[] { "Feature", "Simple Form", "Slider" };
         caps.setCapability("tags", Tags);
 
         driver = new RemoteWebDriver(new URL("https://" + username + ":" + authkey + hub), caps);
